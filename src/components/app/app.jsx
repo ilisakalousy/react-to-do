@@ -12,10 +12,7 @@ import TaskPopup from "../taskPopup/taskPopup";
 import EditForm from "../editForm/editForm";
 
 function App() {
-    const [tasks, setTasks] = useState([
-        {id: '1', title: 'Собака', body: 'Погулять с собакой'},
-        {id: '2', title: '123', body: '123'},
-    ]);
+    const [tasks, setTasks] = useState([]);
     const [isShowPopup, setIsShowPopup] = useState(false);
     const [filter, setFilter] = useState({query: ''});
     const [madeCount, setMadeCount] = useState(0);
